@@ -1,12 +1,58 @@
 import React from "react"
 import Header from "../components/header"
 import Layout from "../components/layout"
+import Container from "../components/container"
+import "bootstrap/dist/css/bootstrap.min.css"
+import "../styles/index.css"
+import {
+  IoLogoGithub,
+  IoLogoTwitter,
+  IoLogoLinkedin,
+  IoLogoFacebook,
+  IoLogoInstagram,
+} from "react-icons/io"
 
 export default () => (
-  <div style={{ color: `purple` }}>
+  <Container>
     <Layout>
-      <Header headerText="Hello Natesan"></Header>
-      <p>I'm building a portfolio page using Gatsby and it is pretty cool!</p>
+      <div class="jumbotron text-center my-3">
+        <Header headerText="Hello! I'm Natesan"></Header>
+      </div>
+      <div class="panel panel-default pt-2 text-center">
+        <p>
+          Computer Science graduate from Coonoor. Living in Bangalore, Product
+          UI development is what I do. Love to travel, photograph, trek and
+          read. I play a whole lot of games and follow a bunch of sports.
+        </p>
+      </div>
+      <div class="panel panel-default pt-5 text-center d-flex justify-content-around">
+        <IoLogoLinkedin
+          onClick={() =>
+            window.open("https://www.linkedin.com/in/natesansivagnanam")
+          }
+          fontSize="60px"
+        />
+        <IoLogoGithub
+          onClick={() => window.open("https://github.com/Natesan")}
+          fontSize="60px"
+        />
+        <IoLogoTwitter
+          onClick={() => window.open("https://www.twitter.com/NatesanSiv")}
+          fontSize="60px"
+        />
+        <IoLogoInstagram
+          onClick={() =>
+            window.open("https://www.instagram.com/natesan.sivagnanam")
+          }
+          fontSize="60px"
+        />
+        <IoLogoFacebook
+          onClick={() =>
+            window.open("https://www.facebook.com/Natesan.Sivagnanam")
+          }
+          fontSize="60px"
+        />
+      </div>
     </Layout>
-  </div>
+  </Container>
 )
