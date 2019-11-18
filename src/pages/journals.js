@@ -2,18 +2,7 @@ import React from "react"
 import Container from "../components/container"
 import Header from "../components/header"
 import Layout from "../components/layout"
-import {
-  TwitterTimelineEmbed,
-  TwitterShareButton,
-  TwitterFollowButton,
-  TwitterHashtagButton,
-  TwitterMentionButton,
-  TwitterTweetEmbed,
-  TwitterMomentShare,
-  TwitterDMButton,
-  TwitterVideoEmbed,
-  TwitterOnAirButton,
-} from "react-twitter-embed"
+import { TwitterFollowButton, TwitterTweetEmbed } from "react-twitter-embed"
 
 var aTweet = ["947028575437377537", "815277249943441408", "814169531669217280"]
 
