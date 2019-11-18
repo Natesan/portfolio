@@ -8,9 +8,19 @@ const ListLink = props => (
 )
 
 export default ({ children }) => (
-  <div style={{ margin: `3rem auto`, maxWidth: 650, padding: `0 1rem` }}>
+  <div
+    style={{
+      width: 1100,
+      margin: `3rem auto`,
+      maxWidth: 650,
+      padding: `0 1rem`,
+    }}
+  >
     <header>
-      <ul style={{ listStyle: `none`, float: `right` }}>
+      <ul
+        style={{ listStyle: `none` }}
+        className="d-flex justify-content-around"
+      >
         <ListLink to="/">Home</ListLink>
         <ListLink to="/experience">Experience</ListLink>
         <ListLink to="/skills">Skills</ListLink>
@@ -19,7 +29,7 @@ export default ({ children }) => (
         <ListLink to="/contact/">Contact</ListLink>
       </ul>
     </header>
-    {children}
+    <section className="container">{children}</section>
     <footer></footer>
   </div>
 )
