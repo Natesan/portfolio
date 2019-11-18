@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 const ListLink = props => (
-  <li style={{ display: `inline-block`, marginRight: `1rem` }}>
+  <li class="nav-item">
     <Link to={props.to}>{props.children}</Link>
   </li>
 )
@@ -10,17 +10,14 @@ const ListLink = props => (
 export default ({ children }) => (
   <div
     style={{
-      width: 1100,
+      width: 1000,
       margin: `3rem auto`,
-      maxWidth: 650,
+      maxWidth: 600,
       padding: `0 1rem`,
     }}
   >
-    <header>
-      <ul
-        style={{ listStyle: `none` }}
-        className="d-flex justify-content-around"
-      >
+    <header className="container mb-4">
+      <ul className="d-flex justify-content-around nav">
         <ListLink to="/">Home</ListLink>
         <ListLink to="/experience">Experience</ListLink>
         <ListLink to="/skills">Skills</ListLink>
@@ -30,6 +27,6 @@ export default ({ children }) => (
       </ul>
     </header>
     <section className="container">{children}</section>
-    <footer></footer>
+    <footer className="container"></footer>
   </div>
 )
