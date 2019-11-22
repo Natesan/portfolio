@@ -10,10 +10,10 @@ export default () => (
   <Container>
     <Layout>
       <Header headerText="Journals" />
-      <div class="d-flex flex-column align-items-center">
+      <div className="d-flex flex-column align-items-center">
         {aTweet &&
           aTweet.map(sTweetID => <TwitterTweetEmbed tweetId={sTweetID} />)}
-        <div class="mt-5">
+        <div className="mt-5">
           <TwitterFollowButton screenName={"natesansiv"} />
         </div>
       </div>

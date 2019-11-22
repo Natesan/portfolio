@@ -19,10 +19,13 @@ export default () => (
     <Layout>
       <Header headerText="Skills" />
       <div className="my-3">
-        <ul class="list-group list-group-flush mt-4 d-flex flex-column justify-content-between">
+        <ul className="list-group list-group-flush mt-4 d-flex flex-column justify-content-between">
           {aSkill &&
             aSkill.map(sSkill => (
-              <li class="list-group-item" style={{ padding: ".25rem 1.25rem" }}>
+              <li
+                className="list-group-item"
+                style={{ padding: ".25rem 1.25rem" }}
+              >
                 {sSkill}
               </li>
             ))}

@@ -35,11 +35,11 @@ export default () => (
       {aExperience.map(oExperience => (
         <div className="my-3">
           <h5>{oExperience.title}</h5>
-          <ul class="list-group list-group-flush mt-2">
+          <ul className="list-group list-group-flush mt-2">
             {oExperience &&
               oExperience.description.map(sDescription => (
                 <li
-                  class="list-group-item"
+                  className="list-group-item"
                   style={{ padding: ".25rem 1.25rem" }}
                 >
                   {sDescription}

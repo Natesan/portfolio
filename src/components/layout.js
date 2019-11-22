@@ -1,9 +1,15 @@
 import React from "react"
 import { Link } from "gatsby"
 
+const linkStyle = {
+  textDecoration: `none`,
+}
+
 const ListLink = props => (
-  <li class="nav-item">
-    <Link to={props.to}>{props.children}</Link>
+  <li className="nav-item">
+    <Link style={linkStyle} to={props.to}>
+      {props.children}
+    </Link>
   </li>
 )
 
