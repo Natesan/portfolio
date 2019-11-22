@@ -8,7 +8,7 @@ var aSkill = [
   "Object Oriented Javascript | jQuery",
   "SAPUI5 | React",
   "Node.js",
-  "Mocha | Chai | Jest | Cypress",
+  "OPA | Mocha | Chai | Jest | Cypress",
   "AJAX | ReST",
   "Design | UX Design",
   "Browser Compatibility | Accessibility | Bi-directional Language Support",

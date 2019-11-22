@@ -1,21 +1,30 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import Header from "../components/header"
 import Layout from "../components/layout"
 import Container from "../components/container"
+import Links from "../components/links"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "../styles/index.css"
-import {
-  IoLogoGithub,
-  IoLogoTwitter,
-  IoLogoLinkedin,
-  IoLogoFacebook,
-  IoLogoInstagram,
-} from "react-icons/io"
+
+var aHomeLinkMetadata = [
+  { type: "LINKEDIN", url: "https://www.linkedin.com/in/natesansivagnanam" },
+  { type: "GITHUB", url: "https://github.com/Natesan" },
+  { type: "TWITTER", url: "https://www.twitter.com/NatesanSiv" },
+  { type: "INSTAGRAM", url: "https://www.instagram.com/natesan.sivagnanam" },
+  { type: "FACEBOOK", url: "https://www.facebook.com/Natesan.Sivagnanam" },
+]
 
 export default () => (
   <Container>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>Natesan Sivagnanam</title>
+      <link rel="canonical" href="https://natesan.netlify.com/" />
+    </Helmet>
+
     <Layout>
-      <div className="jumbotron text-center my-3">
+      <div className="jumbotron text-center my-2">
         <Header headerText="Hello! I'm Natesan"></Header>
       </div>
       <div className="panel panel-default pt-2 text-center">
@@ -26,37 +35,7 @@ export default () => (
         </p>
       </div>
       <div className="panel panel-default pt-5 text-center d-flex justify-content-around">
-        <IoLogoLinkedin
-          onClick={() =>
-            window.open("https://www.linkedin.com/in/natesansivagnanam")
-          }
-          fontSize="60px"
-          className="cursor"
-        />
-        <IoLogoGithub
-          onClick={() => window.open("https://github.com/Natesan")}
-          fontSize="60px"
-          className="cursor"
-        />
-        <IoLogoTwitter
-          onClick={() => window.open("https://www.twitter.com/NatesanSiv")}
-          fontSize="60px"
-          className="cursor"
-        />
-        <IoLogoInstagram
-          onClick={() =>
-            window.open("https://www.instagram.com/natesan.sivagnanam")
-          }
-          fontSize="60px"
-          className="cursor"
-        />
-        <IoLogoFacebook
-          onClick={() =>
-            window.open("https://www.facebook.com/Natesan.Sivagnanam")
-          }
-          fontSize="60px"
-          className="cursor"
-        />
+        <Links links={aHomeLinkMetadata}></Links>
       </div>
     </Layout>
   </Container>
