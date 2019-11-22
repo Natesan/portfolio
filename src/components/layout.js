@@ -6,7 +6,7 @@ const linkStyle = {
 }
 
 const ListLink = props => (
-  <li className="nav-item">
+  <li className="nav-item px-2 py-1">
     <Link style={linkStyle} to={props.to}>
       {props.children}
     </Link>
@@ -16,13 +16,12 @@ const ListLink = props => (
 export default ({ children }) => (
   <div
     style={{
-      width: 1000,
       margin: `3rem auto`,
       maxWidth: 600,
       padding: `0 1rem`,
     }}
   >
-    <header className="container mb-4">
+    <header className="container mb-3">
       <ul className="d-flex justify-content-around nav">
         <ListLink to="/">Home</ListLink>
         <ListLink to="/experience">Experience</ListLink>

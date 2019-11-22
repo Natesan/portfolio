@@ -1,17 +1,14 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
-
 module.exports = {
+  siteMetadata: {
+    title: "Natesan Sivagnanam",
+    titleTemplate: "%s · The Real Hero",
+    description: "Portfolio of Natesan Sivagnanam",
+    url: "https://www.natesan.netlify.com", // No trailing slash allowed!
+    image: "/favicon.ico", // Path to your image you placed in the 'static' folder
+    twitterUsername: "@NatesanSiv",
+  },
   plugins: [
-    // {
-    //   resolve: `gatsby-plugin-typography`,
-    //   options: {
-    //     pathToConfigModule: `src/utils/typography`,
-    //   },
-    // },
+    { resolve: `gatsby-plugin-react-helmet` },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
