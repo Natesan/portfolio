@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import { Link } from "gatsby"
 
 const linkStyle = {
@@ -13,7 +14,12 @@ const ListLink = props => (
   </li>
 )
 
-export default ({ children }) => (
+var oPageMetadata = {
+  title: "Natesan Sivagnanam",
+  href: "https://natesan.netlify.com/",
+}
+
+export default ({ pageTitle, children }) => (
   <div
     style={{
       margin: `3rem auto`,
@@ -21,6 +27,11 @@ export default ({ children }) => (
       padding: `0 1rem`,
     }}
   >
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>{pageTitle}</title>
+      <link rel="canonical" href={oPageMetadata.href} />
+    </Helmet>
     <header className="container mb-3">
       <ul className="d-flex justify-content-around nav">
         <ListLink to="/">Home</ListLink>

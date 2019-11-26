@@ -21,6 +21,7 @@ export default class Links extends Component {
       case "LINKEDIN":
         return (
           <IoLogoLinkedin
+            key={link.type}
             onClick={() => window.open(link.url)}
             fontSize={link.fontSize ? link.fontSize : "60px"}
             className="cursor"
@@ -30,6 +31,7 @@ export default class Links extends Component {
       case "GITHUB":
         return (
           <IoLogoGithub
+            key={link.type}
             onClick={() => window.open(link.url)}
             fontSize={link.fontSize ? link.fontSize : "60px"}
             className="cursor"
@@ -39,6 +41,7 @@ export default class Links extends Component {
       case "TWITTER":
         return (
           <IoLogoTwitter
+            key={link.type}
             onClick={() => window.open(link.url)}
             fontSize={link.fontSize ? link.fontSize : "60px"}
             className="cursor"
@@ -48,6 +51,7 @@ export default class Links extends Component {
       case "INSTAGRAM":
         return (
           <IoLogoInstagram
+            key={link.type}
             onClick={() => window.open(link.url)}
             fontSize={link.fontSize ? link.fontSize : "60px"}
             className="cursor"
@@ -57,6 +61,7 @@ export default class Links extends Component {
       case "FACEBOOK":
         return (
           <IoLogoFacebook
+            key={link.type}
             onClick={() => window.open(link.url)}
             fontSize={link.fontSize ? link.fontSize : "60px"}
             className="cursor"
@@ -66,14 +71,20 @@ export default class Links extends Component {
       case "MAIL":
         return (
           <a href={link.url} target="_top" className={link.styleClass}>
-            <IoMdMail fontSize={link.fontSize ? link.fontSize : "60px"} />
+            <IoMdMail
+              key={link.type}
+              fontSize={link.fontSize ? link.fontSize : "60px"}
+            />
           </a>
         )
 
       case "PHONE":
         return (
           <a href={link.url} target="_top" className={link.styleClass}>
-            <MdPhoneInTalk fontSize={link.fontSize ? link.fontSize : "60px"} />
+            <MdPhoneInTalk
+              key={link.type}
+              fontSize={link.fontSize ? link.fontSize : "60px"}
+            />
           </a>
         )
 
