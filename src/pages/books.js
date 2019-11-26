@@ -4,10 +4,15 @@ import Header from "../components/header"
 import Layout from "../components/layout"
 import "../styles/books.css"
 
+const oPageMetadata = {
+  title: "Natesan Sivagnanam - Books",
+  headerText: "What I Read",
+}
+
 export default () => (
   <Container>
-    <Layout>
-      <Header headerText="Books" />
+    <Layout pageTitle={oPageMetadata.title}>
+      <Header headerText={oPageMetadata.headerText} />
 
       <div id="gr_grid_widget_1574420575">
         <div className="gr_grid_container d-flex flex-row flex-wrap p-2 bd-highlight justify-content-between align-items-stretch align-self-stretch">
