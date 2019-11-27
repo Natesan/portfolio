@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout renders correctly 1`] = `
+<div
+  style={
+    Object {
+      "margin": "3rem auto",
+      "maxWidth": 600,
+      "padding": "0 1rem",
+    }
+  }
+>
+  <header
+    className="container mb-3"
+  >
+    <ul
+      className="d-flex justify-content-around nav"
+    >
+      <li
+        className="nav-item px-2 py-1"
+      >
+        <a
+          href="/"
+          style={
+            Object {
+              "textDecoration": "none",
+            }
+          }
+        >
+          Home
+        </a>
+      </li>
+      <li
+        className="nav-item px-2 py-1"
+      >
+        <a
+          href="/experience"
+          style={
+            Object {
+              "textDecoration": "none",
+            }
+          }
+        >
+          Experience
+        </a>
+      </li>
+      <li
+        className="nav-item px-2 py-1"
+      >
+        <a
+          href="/skills"
+          style={
+            Object {
+              "textDecoration": "none",
+            }
+          }
+        >
+          Skills
+        </a>
+      </li>
+      <li
+        className="nav-item px-2 py-1"
+      >
+        <a
+          href="/journals"
+          style={
+            Object {
+              "textDecoration": "none",
+            }
+          }
+        >
+          Journals
+        </a>
+      </li>
+      <li
+        className="nav-item px-2 py-1"
+      >
+        <a
+          href="/books/"
+          style={
+            Object {
+              "textDecoration": "none",
+            }
+          }
+        >
+          Books
+        </a>
+      </li>
+      <li
+        className="nav-item px-2 py-1"
+      >
+        <a
+          href="/contact/"
+          style={
+            Object {
+              "textDecoration": "none",
+            }
+          }
+        >
+          Contact
+        </a>
+      </li>
+    </ul>
+  </header>
+  <section
+    className="container"
+  >
+    <div
+      id="test"
+    />
+  </section>
+  <footer
+    className="container"
+  />
+</div>
+`;
