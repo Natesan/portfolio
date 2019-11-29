@@ -17,7 +17,7 @@ const oPageMetadata = {
     "Design | UX Design",
     "Behaviour Driven Development",
     "Browser Compatibility | Accessibility | Bi-directional Language Support",
-    "Web Page Performanceg",
+    "Web Page Performance",
   ],
 }
 
