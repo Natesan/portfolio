@@ -16,6 +16,7 @@ const oPageMetadata = {
         "Open to work with distributed cross-functional teams following agile processes or otherwise",
         "Contributed to patent filing on various bot based implementations",
         "Go to person for accessibility, experience in working with web page performance",
+        "Building interactive prototypes using Javascript with supporting UI libraries/framework is something I do outside of work",
       ],
     },
     {
@@ -24,8 +25,7 @@ const oPageMetadata = {
       description: [
         "Involved in custom control development for UI library used within the organization",
         "Built a control to achieve real time rich-text (WYSIWYG) email editing with templating support",
-        "Worked of some niche areas like Right-to-Left Language support, Web Font Icons implementations to enhance performace of pages",
-        "Understand and build interactive prototypes using Node.js and supporting UI libraries/framework",
+        "Worked on some niche areas like Right-to-Left Language support, Web Font Icons implementations to enhance performace of pages",
         "Worked on small scale end-to-end enhancements in this role",
       ],
     },
