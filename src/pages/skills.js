@@ -11,10 +11,13 @@ const oPageMetadata = {
     "Object Oriented Javascript | jQuery",
     "SAPUI5 | React",
     "Node.js",
-    "OPA | Mocha | Chai | Jest | Cypress",
+    "OPA | Mocha | Chai | Jest | Cypress | Cucumber",
     "AJAX | ReST",
+    "GIT",
     "Design | UX Design",
+    "Behaviour Driven Development",
     "Browser Compatibility | Accessibility | Bi-directional Language Support",
+    "Web Page Performanceg",
   ],
 }
 

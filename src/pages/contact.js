@@ -16,12 +16,6 @@ const oPageMetadata = {
       fontSize: "40px",
       styleClass: "contactLink",
     },
-    {
-      type: "PHONE",
-      url: "tel:+919742398411",
-      fontSize: "40px",
-      styleClass: "contactLink",
-    },
   ],
 }
 

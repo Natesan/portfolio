@@ -1,3 +1,22 @@
 .cursor {
   cursor: pointer;
 }
+
+.nav-item {
+  box-shadow: none;
+  transition: box-shadow 0.2s linear;
+  margin: 1px; /* Increased margin since the box-shadow expands outside the element, like outline */
+}
+
+.nav-item:hover {
+  cursor: pointer;
+  box-shadow: 0 2px 2px -2px #000000a6;
+}
+
+.nav-item a {
+  color: #000000;
+}
+
+.nav-item a:hover {
+  color: #000000a6;
+}
