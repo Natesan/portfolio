@@ -2,17 +2,34 @@ import React from "react"
 import Container from "../components/container"
 import Header from "../components/header"
 import Layout from "../components/layout"
+import Badge from "react-bootstrap/Badge"
 import "../styles/books.css"
 
 const oPageMetadata = {
   title: "Natesan Sivagnanam - Books",
   headerText: "What I Read",
+  topics: [
+    "Non Fiction",
+    "Adventure",
+    "Technology",
+    "History",
+    "Business",
+    "Sports",
+    "Travel",
+  ],
 }
 
 export default () => (
   <Container>
     <Layout pageTitle={oPageMetadata.title}>
       <Header headerText={oPageMetadata.headerText} />
+      <div className="d-flex flex-wrap justify-content-around">
+        {oPageMetadata.topics.map(stopic => (
+          <Badge pill variant="light" className="mt-2">
+            {stopic}
+          </Badge>
+        ))}
+      </div>
 
       <div id="gr_grid_widget_1574420575">
         <div className="gr_grid_container d-flex flex-row flex-wrap p-2 bd-highlight justify-content-between align-items-stretch align-self-stretch">
