@@ -18,8 +18,8 @@ export default () => (
       <Header headerText={oPageMetadata.headerText} />
       <div className="d-flex flex-column align-items-center">
         {oPageMetadata.aTweet &&
-          oPageMetadata.aTweet.map(sTweetID => (
-            <div className="twitterWidget">
+          oPageMetadata.aTweet.map((sTweetID, nTweetIndex) => (
+            <div className="twitterWidget" key={nTweetIndex}>
               <TwitterTweetEmbed tweetId={sTweetID} />
             </div>
           ))}
