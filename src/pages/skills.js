@@ -28,8 +28,9 @@ export default () => (
       <div className="my-3">
         <ul className="list-group list-group-flush mt-4 d-flex flex-column justify-content-between">
           {oPageMetadata.aSkill &&
-            oPageMetadata.aSkill.map(sSkill => (
+            oPageMetadata.aSkill.map((sSkill, nSkillIndex) => (
               <li
+                key={nSkillIndex}
                 className="list-group-item"
                 style={{ padding: ".25rem 1.25rem" }}
               >

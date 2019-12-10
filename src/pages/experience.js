@@ -36,13 +36,14 @@ export default () => (
   <Container>
     <Layout pageTitle={oPageMetadata.title}>
       <Header headerText={oPageMetadata.headerText} />
-      {oPageMetadata.aExperience.map(oExperience => (
-        <div className="my-3">
+      {oPageMetadata.aExperience.map((oExperience, nExperienceIndex) => (
+        <div className="my-3" key={nExperienceIndex}>
           <h5>{oExperience.title}</h5>
           <ul className="list-group list-group-flush mt-2">
             {oExperience &&
-              oExperience.description.map(sDescription => (
+              oExperience.description.map((sDescription, nDescriptionIndex) => (
                 <li
+                  key={nDescriptionIndex}
                   className="list-group-item"
                   style={{ padding: ".25rem 1.25rem" }}
                 >
