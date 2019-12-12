@@ -21,7 +21,7 @@ module.exports = {
       options: {
         name: `Natesan's Portfolio`,
         short_name: `Natesan`,
-        start_url: `/`,
+        start_url: `/index`,
         background_color: `#f7f0eb`,
         theme_color: `#000`,
         display: `standalone`,
