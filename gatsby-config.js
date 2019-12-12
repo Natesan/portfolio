@@ -28,5 +28,11 @@ module.exports = {
         icon: `src/images/favicon.ico`,
       },
     },
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        precachePages: [`/experience`, `/skills`, `/contact`],
+      },
+    },
   ],
 }
