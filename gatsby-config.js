@@ -23,7 +23,7 @@ module.exports = {
         short_name: `Natesan`,
         start_url: `/`,
         background_color: `#f7f0eb`,
-        theme_color: `#a2466c`,
+        theme_color: `#000`,
         display: `standalone`,
         icon: `src/images/favicon.ico`,
       },
