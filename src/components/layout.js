@@ -29,6 +29,10 @@ export default ({ pageTitle, children }) => (
   >
     <Helmet>
       <meta charSet="utf-8" />
+      <meta
+        name="Description"
+        content="Natesan's portfolio built on Gatsby"
+      ></meta>
       <title>{pageTitle}</title>
       <link rel="canonical" href={oPageMetadata.href} />
     </Helmet>
