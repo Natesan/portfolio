@@ -6,9 +6,16 @@ module.exports = {
     url: "https://www.natesan.netlify.com", // No trailing slash allowed!
     image: "/favicon.ico", // Path to your image you placed in the 'static' folder
     twitterUsername: "@NatesanSiv",
+    siteUrl: "https://www.natesan.netlify.com",
   },
   plugins: [
     { resolve: `gatsby-plugin-react-helmet` },
+    {
+      resolve: `gatsby-plugin-react-helmet-canonical-urls`,
+      options: {
+        siteUrl: `https://www.natesan.netlify.com`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -32,6 +39,12 @@ module.exports = {
       resolve: `gatsby-plugin-offline`,
       options: {
         precachePages: [`/experience`, `/skills`, `/contact`],
+      },
+    },
+    {
+      resolve: "gatsby-plugin-html-attributes",
+      options: {
+        lang: "en",
       },
     },
   ],
