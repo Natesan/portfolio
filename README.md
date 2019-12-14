@@ -1,5 +1,5 @@
 <h1 align="center">
-  Gatsby's Portfolio for Natesan hosted in Netlify
+  Gatsby's Portfolio (PWA) for Natesan hosted in Netlify
 </h1>
 
 Kick off your portfolio with this repository. This ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast portfolio generator for React.
