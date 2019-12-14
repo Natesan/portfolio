@@ -37,7 +37,18 @@ export default ({ pageTitle, children }) => (
       <title>{pageTitle}</title>
       <link rel="canonical" href={oPageMetadata.href} />
     </Helmet>
-    <PageTransition>
+    <PageTransition
+      defaultStyle={{
+        transition: `opacity 800ms cubic-bezier(0,0,1,1)`,
+        opacity: 0,
+      }}
+      transitionStyles={{
+        entering: { opacity: 1 },
+        entered: { opacity: 1 },
+        exiting: { opacity: 0 },
+        exited: { opacity: 0 },
+      }}
+    >
       <header className="container mb-3">
         <ul className="d-flex justify-content-around nav">
           <ListLink to="/">Home</ListLink>
