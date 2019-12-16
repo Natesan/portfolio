@@ -27,11 +27,11 @@ export default () => (
       <div className="jumbotron text-center my-2">
         <Header headerText={oPageMetadata.headerText}></Header>
       </div>
-      <div className="panel panel-default pt-2 text-center">
-        <p>{oPageMetadata.introText}</p>
-      </div>
-      <div className="panel panel-default pt-5 text-center d-flex justify-content-around">
+      <div className="panel panel-default pt-2 text-center d-flex justify-content-around">
         <Links links={oPageMetadata.homePageLinks}></Links>
+      </div>
+      <div className="panel panel-default pt-5 text-center">
+        <p>{oPageMetadata.introText}</p>
       </div>
     </Layout>
   </Container>
