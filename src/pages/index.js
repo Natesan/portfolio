@@ -3,6 +3,7 @@ import Header from "../components/header"
 import Layout from "../components/layout"
 import Container from "../components/container"
 import Links from "../components/links"
+import Thumbnail from "../components/thumbnail"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "../styles/index.css"
 
@@ -24,13 +25,16 @@ const oPageMetadata = {
 export default () => (
   <Container>
     <Layout pageTitle={oPageMetadata.title}>
-      <div className="jumbotron text-center my-2">
+      <div className="text-center">
         <Header headerText={oPageMetadata.headerText}></Header>
       </div>
-      <div className="panel panel-default pt-2 text-center d-flex justify-content-around">
+      <div className="text-center d-flex justify-content-around px-5">
+        <Thumbnail></Thumbnail>
+      </div>
+      <div className="panel panel-default text-center d-flex justify-content-around my-3">
         <Links links={oPageMetadata.homePageLinks}></Links>
       </div>
-      <div className="panel panel-default pt-5 text-center">
+      <div className="panel panel-default text-center my-3">
         <p>{oPageMetadata.introText}</p>
       </div>
     </Layout>
