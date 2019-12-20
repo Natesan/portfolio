@@ -20,7 +20,7 @@ var oPageMetadata = {
   href: "https://natesan.netlify.com/",
 }
 
-export default ({ pageTitle, children }) => (
+export default ({ pageTitle, children, showCredits }) => (
   <div
     style={{
       padding: `0 1rem`,
@@ -58,7 +58,11 @@ export default ({ pageTitle, children }) => (
         </ul>
       </header>
       <section className="container">{children}</section>
-      <footer className="container"></footer>
+      {showCredits ? (
+        <footer className="container text-center blockquote-footer fixed-bottom mb-3">
+          Built using Gatsby and Netlify
+        </footer>
+      ) : null}
     </PageTransition>
   </div>
 )

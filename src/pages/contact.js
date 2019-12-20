@@ -17,11 +17,15 @@ const oPageMetadata = {
       styleClass: "contactLink",
     },
   ],
+  showCredits: true,
 }
 
 export default () => (
   <Container>
-    <Layout pageTitle={oPageMetadata.title}>
+    <Layout
+      pageTitle={oPageMetadata.title}
+      showCredits={oPageMetadata.showCredits}
+    >
       <Header headerText={oPageMetadata.headerText} />
       <div className="panel panel-default pt-2 text-center">
         <p>{oPageMetadata.introText}</p>
