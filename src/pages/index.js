@@ -31,11 +31,11 @@ export default () => (
       <div className="text-center d-flex justify-content-around px-5">
         <Thumbnail></Thumbnail>
       </div>
-      <div className="panel panel-default text-center d-flex justify-content-around my-3">
-        <Links links={oPageMetadata.homePageLinks}></Links>
-      </div>
       <div className="panel panel-default text-center my-3">
         <p>{oPageMetadata.introText}</p>
+      </div>
+      <div className="panel panel-default text-center d-flex justify-content-around my-3">
+        <Links links={oPageMetadata.homePageLinks}></Links>
       </div>
     </Layout>
   </Container>

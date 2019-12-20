@@ -4,7 +4,6 @@ module.exports = {
     titleTemplate: "%s · The Real Hero",
     description: "Portfolio of Natesan Sivagnanam",
     url: "https://www.natesan.netlify.com", // No trailing slash allowed!
-    image: "/favicon.ico", // Path to your image you placed in the 'static' folder
     twitterUsername: "@NatesanSiv",
     siteUrl: "https://www.natesan.netlify.com",
   },
@@ -14,6 +13,13 @@ module.exports = {
       resolve: `gatsby-plugin-react-helmet-canonical-urls`,
       options: {
         siteUrl: `https://www.natesan.netlify.com`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
       },
     },
     {
@@ -32,7 +38,6 @@ module.exports = {
         background_color: `#f7f0eb`,
         theme_color: `#000`,
         display: `standalone`,
-        icon: `src/images/favicon.ico`,
       },
     },
     {
@@ -50,5 +55,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-page-transitions",
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
   ],
 }
