@@ -8,7 +8,7 @@ export default () => {
       file(relativePath: { eq: "Natesan_Portfolio.jpeg" }) {
         id
         childImageSharp {
-          fixed(width: 350, height: 400) {
+          fixed(width: 350, height: 350) {
             ...GatsbyImageSharpFixed
           }
         }
