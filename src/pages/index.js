@@ -11,8 +11,9 @@ const oPageMetadata = {
   title: "Natesan Sivagnanam",
   headerText: "Hello! I'm Natesan",
   introText: `Computer Science graduate from Coonoor. Living in Bangalore, Product 
-  UI development is what I do. Love to travel, photograph, trek and
-  read. I play a whole lot of games and follow a bunch of sports.`,
+  User Interface development is what I do for large scale enterprise applications. 
+  I think of design of things and love to travel, photograph, trek & read. 
+  I play a whole lot of games and follow a bunch of sports.`,
   homePageLinks: [
     { type: "LINKEDIN", url: "https://www.linkedin.com/in/natesansivagnanam" },
     { type: "GITHUB", url: "https://github.com/Natesan" },

@@ -6,6 +6,7 @@ module.exports = {
     url: "https://www.natesan.netlify.com", // No trailing slash allowed!
     twitterUsername: "@NatesanSiv",
     siteUrl: "https://www.natesan.netlify.com",
+    author: `@Natesan`,
   },
   plugins: [
     { resolve: `gatsby-plugin-react-helmet` },
@@ -34,10 +35,11 @@ module.exports = {
       options: {
         name: `Natesan's Portfolio`,
         short_name: `Natesan`,
-        start_url: `/index`,
+        start_url: `/`,
         background_color: `#f7f0eb`,
-        theme_color: `#000`,
+        theme_color: `#ffffff`,
         display: `standalone`,
+        icon: `src/images/favicon.ico`,
       },
     },
     {
