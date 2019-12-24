@@ -2,7 +2,7 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import { Link } from "gatsby"
 import PageTransition from "gatsby-plugin-page-transitions"
-import favicon from "../images/favicon.ico"
+import favicon from "../images/favicon.png"
 
 const linkStyle = {
   textDecoration: `none`,
