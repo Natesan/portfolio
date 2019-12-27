@@ -21,6 +21,7 @@ Kick off your portfolio with this repository. This ships with the main Gatsby co
 
     ```shell
     cd portfolio/
+    npm install
     gatsby develop
     ```
 
