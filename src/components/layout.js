@@ -35,11 +35,12 @@ export default ({ pageTitle, children, showCredits }) => (
       ></meta>
       <title>{pageTitle}</title>
       <link rel="canonical" href={oPageMetadata.href} />
-      <link rel="icon" href={favicon} />
+      <link rel="icon" type="image/x-icon" href={favicon} />
+      <link rel="shortcut icon" type="image/x-icon" href={favicon} />
     </Helmet>
     <PageTransition
       defaultStyle={{
-        transition: `opacity 900ms cubic-bezier(0.5,0,1,1)`,
+        transition: `opacity 900ms cubic-bezier(0.42,0,0.58,1)`,
         opacity: 0,
       }}
       transitionStyles={{
