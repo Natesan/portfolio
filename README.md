@@ -88,3 +88,4 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://natesan.netlify.com)
 
 ## Reference
+“How a portfolio redesign with Gatsby made it perform better — way better!” by Natesan Sivagnanam https://link.medium.com/afQO5pyFO2
