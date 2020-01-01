@@ -41,7 +41,7 @@ module.exports = {
         background_color: `#f7f0eb`,
         theme_color: `#000`,
         display: `standalone`,
-        icon: "src/images/favicon.ico",
+        icon: "src/images/Natesan_Sivagnanam.jpeg",
         include_favicon: false,
       },
     },
