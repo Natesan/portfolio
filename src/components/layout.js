@@ -2,7 +2,7 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import { Link } from "gatsby"
 import PageTransition from "gatsby-plugin-page-transitions"
-import favicon from "../images/favicon.ico"
+// import favicon from "../images/favicon.ico"
 
 const linkStyle = {
   textDecoration: `none`,
@@ -35,8 +35,8 @@ export default ({ pageTitle, children, showCredits }) => (
       ></meta>
       <title>{pageTitle}</title>
       <link rel="canonical" href={oPageMetadata.href} />
-      <link rel="icon" type="image/x-icon" href={favicon} />
-      <link rel="shortcut icon" type="image/x-icon" href={favicon} />
+      {/* <link rel="icon" type="image/x-icon" href={favicon} />
+      <link rel="shortcut icon" type="image/x-icon" href={favicon} /> */}
     </Helmet>
     <PageTransition
       defaultStyle={{
