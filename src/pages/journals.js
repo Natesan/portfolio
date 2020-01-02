@@ -8,7 +8,7 @@ import { TwitterFollowButton, TwitterTweetEmbed } from "react-twitter-embed"
 const oPageMetadata = {
   title: "Natesan Sivagnanam - Journals",
   headerText: "Journals",
-  aTweet: ["947028575437377537", "815277249943441408", "814169531669217280"],
+  aTweet: ["1211300402727026688", "947028575437377537", "815277249943441408"],
   screenName: "natesansiv",
 }
 
