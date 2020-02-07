@@ -15,7 +15,7 @@ const oPageMetadata = {
   I think of design of things and love to travel, photograph, trek & read. 
   I play a whole lot of games and follow a bunch of sports.`,
   homePageLinks: [
-    { type: "LINKEDIN", url: "https://www.linkedin.com/in/natesansivagnanam" },
+    { type: "LINKEDIN", url: "https://www.linkedin.com/in/natesans" },
     { type: "GITHUB", url: "https://github.com/Natesan" },
     { type: "TWITTER", url: "https://www.twitter.com/NatesanSiv" },
     { type: "INSTAGRAM", url: "https://www.instagram.com/natesan.sivagnanam" },
