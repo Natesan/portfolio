@@ -13,6 +13,7 @@ const oPageMetadata = {
         "Experience building large cloud-based enterprise software specializing in frontend technologies",
         "Hands on working experience with frameworks designed to build cross-platform, responsive, enterprise-ready, testable applications",
         "Worked on core product areas leading a team and contributing to the UI platform thereby gaining experience in making important architectural design decisions",
+        "Contributed to a core metadata driven framework adopting Behaviour Driven Development focusing on both Test Driven Development and Unit Testing"
         "Open to work with distributed cross-functional teams following agile processes or otherwise",
         "Contributed to patent filing on various bot based implementations",
         "Go to person for accessibility, experience in working with web page performance",
