@@ -1,0 +1,16 @@
+.skills,
+.books {
+  max-width: 600px;
+  margin: auto;
+}
+
+.journals {
+  max-width: 700px;
+  margin: auto;
+}
+
+.index,
+.experience {
+  max-width: 800px;
+  margin: auto;
+}

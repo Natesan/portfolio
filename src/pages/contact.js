@@ -2,8 +2,8 @@ import React from "react"
 import Container from "../components/container"
 import Header from "../components/header"
 import Layout from "../components/layout"
+import Content from "../components/content"
 import Links from "../components/links"
-import "../styles/contact.css"
 
 const oPageMetadata = {
   title: "Natesan Sivagnanam - Contact",
@@ -14,10 +14,11 @@ const oPageMetadata = {
       type: "MAIL",
       url: "mailto:nmsnatesan@gmail.com?Subject=Ahoy%20Hoy",
       fontSize: "40px",
-      styleClass: "contactLink",
+      styleClass: "cursor",
     },
   ],
   showCredits: true,
+  styleClass: "contact",
 }
 
 export default () => (
@@ -26,13 +27,15 @@ export default () => (
       pageTitle={oPageMetadata.title}
       showCredits={oPageMetadata.showCredits}
     >
-      <Header headerText={oPageMetadata.headerText} />
-      <div className="panel panel-default pt-2 text-center">
-        <p>{oPageMetadata.introText}</p>
-      </div>
-      <div className="panel panel-default pt-5 text-center d-flex justify-content-center">
-        <Links links={oPageMetadata.aContactLinkMetadata}></Links>
-      </div>
+      <Content styleClass={oPageMetadata.styleClass}>
+        <Header headerText={oPageMetadata.headerText} />
+        <div className="panel panel-default pt-2 text-center">
+          <p>{oPageMetadata.introText}</p>
+        </div>
+        <div className="panel panel-default pt-5 text-center d-flex justify-content-center">
+          <Links links={oPageMetadata.aContactLinkMetadata}></Links>
+        </div>
+      </Content>
     </Layout>
   </Container>
 )

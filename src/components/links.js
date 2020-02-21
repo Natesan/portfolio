@@ -24,7 +24,7 @@ export default class Links extends Component {
             key={link.type}
             onClick={() => window.open(link.url)}
             fontSize={link.fontSize ? link.fontSize : "60px"}
-            className="cursor"
+            className={link.styleClass ? link.styleClass : ""}
           />
         )
 
@@ -34,7 +34,7 @@ export default class Links extends Component {
             key={link.type}
             onClick={() => window.open(link.url)}
             fontSize={link.fontSize ? link.fontSize : "60px"}
-            className="cursor"
+            className={link.styleClass ? link.styleClass : ""}
           />
         )
 
@@ -44,7 +44,7 @@ export default class Links extends Component {
             key={link.type}
             onClick={() => window.open(link.url)}
             fontSize={link.fontSize ? link.fontSize : "60px"}
-            className="cursor"
+            className={link.styleClass ? link.styleClass : ""}
           />
         )
 
@@ -54,7 +54,7 @@ export default class Links extends Component {
             key={link.type}
             onClick={() => window.open(link.url)}
             fontSize={link.fontSize ? link.fontSize : "60px"}
-            className="cursor"
+            className={link.styleClass ? link.styleClass : ""}
           />
         )
 
@@ -64,7 +64,7 @@ export default class Links extends Component {
             key={link.type}
             onClick={() => window.open(link.url)}
             fontSize={link.fontSize ? link.fontSize : "60px"}
-            className="cursor"
+            className={link.styleClass ? link.styleClass : ""}
           />
         )
 
