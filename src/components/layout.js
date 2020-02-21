@@ -9,7 +9,7 @@ const linkStyle = {
 }
 
 const ListLink = props => (
-  <li className="nav-item px-2 py-1">
+  <li className="nav-item px-3 py-1">
     <Link style={linkStyle} to={props.to}>
       {props.children}
     </Link>
@@ -50,8 +50,8 @@ export default ({ pageTitle, children, showCredits }) => (
         exited: { opacity: 0 },
       }}
     >
-      <header className="container mb-3">
-        <ul className="d-flex justify-content-around nav">
+      <header className="mb-3">
+        <ul className="d-flex justify-content-center nav">
           <ListLink to="/">Home</ListLink>
           <ListLink to="/experience">Experience</ListLink>
           <ListLink to="/skills">Skills</ListLink>
