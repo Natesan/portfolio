@@ -5,8 +5,8 @@ import Layout from "../components/layout"
 import Content from "../components/content"
 
 const oPageMetadata = {
-  title: "Natesan Sivagnanam - Experience",
-  headerText: "Experience",
+  title: "Natesan Sivagnanam - Work",
+  experienceHeaderText: "Experience",
   aExperience: [
     {
       title: "Senior Software Engineer (User Interface) @ SAP Labs",
@@ -22,8 +22,7 @@ const oPageMetadata = {
       ],
     },
     {
-      title:
-        "Software Development Engineer (User Interface) @ SAP SuccessFactors",
+      title: "Software Engineer (User Interface) @ SAP SuccessFactors",
       description: [
         "Involved in custom control development for UI library used within the organization",
         "Built a control to achieve real time rich-text (WYSIWYG) email editing with templating support",
@@ -32,24 +31,44 @@ const oPageMetadata = {
       ],
     },
   ],
-  styleClass: "experience",
+  skillHeaderText: "Skills",
+  aSkill: [
+    "HTML | CSS",
+    "Object Oriented Javascript | jQuery",
+    "SAPUI5 | React",
+    "Single Page Applications | Progressive Web Applications",
+    "Node.js",
+    "OPA | Mocha | Chai | Jest | Cypress | Cucumber",
+    "AJAX | ReST",
+    "GIT",
+    "Design | UX Design",
+    "Behaviour Driven Development | Test Driven Development | Unit Testing",
+    "Browser Compatibility | Accessibility | Bi-directional Language Support",
+    "Web Page Performance",
+  ],
+  styleClass: "work",
 }
 
 export default () => (
   <App>
     <Layout pageTitle={oPageMetadata.title}>
-      <Content styleClass={oPageMetadata.styleClass}>
-        <Header headerText={oPageMetadata.headerText} />
+      <Content
+        styleClass={oPageMetadata.styleClass}
+        className="lg:w-9/12 lg:mx-auto"
+      >
+        <Header headerText={oPageMetadata.experienceHeaderText} />
         {oPageMetadata.aExperience.map((oExperience, nExperienceIndex) => (
           <div className="mt-3 mb-5" key={nExperienceIndex}>
-            <h5 className="text-center">{oExperience.title}</h5>
-            <ul className="list-group list-group-flush mt-2">
+            <h5 className="text-center text-gray-800 font-semibold border-black-700 border-b">
+              {oExperience.title}
+            </h5>
+            <ul className="mt-2">
               {oExperience &&
                 oExperience.description.map(
                   (sDescription, nDescriptionIndex) => (
                     <li
                       key={nDescriptionIndex}
-                      className="list-group-item"
+                      className=""
                       style={{ padding: ".25rem 1.25rem" }}
                     >
                       {sDescription}
@@ -59,6 +78,26 @@ export default () => (
             </ul>
           </div>
         ))}
+      </Content>
+      <Content
+        styleClass={oPageMetadata.styleClass}
+        className="lg:w-9/12 lg:mx-auto"
+      >
+        <Header headerText={oPageMetadata.skillHeaderText} />
+        <div className="my-3">
+          <ul className="mt-4">
+            {oPageMetadata.aSkill &&
+              oPageMetadata.aSkill.map((sSkill, nSkillIndex) => (
+                <li
+                  key={nSkillIndex}
+                  className=""
+                  style={{ padding: ".25rem 1.25rem" }}
+                >
+                  {sSkill}
+                </li>
+              ))}
+          </ul>
+        </div>
       </Content>
     </Layout>
   </App>

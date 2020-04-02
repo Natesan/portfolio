@@ -1,5 +1,5 @@
 import React from "react"
-import Container from "../components/container"
+import App from "../components/app"
 import Layout from "../components/layout"
 import Content from "../components/content"
 import Header from "../components/header"
@@ -25,7 +25,7 @@ const oPageMetadata = {
 }
 
 export default () => (
-  <Container styleClass={oPageMetadata.styleClass}>
+  <App styleClass={oPageMetadata.styleClass}>
     <Layout pageTitle={oPageMetadata.title}>
       <Content styleClass={oPageMetadata.styleClass}>
         <Header headerText={oPageMetadata.headerText} />
@@ -45,5 +45,5 @@ export default () => (
         </div>
       </Content>
     </Layout>
-  </Container>
+  </App>
 )
