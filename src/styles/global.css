@@ -1,21 +1,12 @@
-.cursor {
-  cursor: pointer;
-}
+@import "tailwindcss/base";
 
-.nav-item {
-  box-shadow: none;
-  transition: box-shadow 0.2s linear;
-  margin: 1px; /* Increased margin since the box-shadow expands outside the element, like outline */
-}
+@import "tailwindcss/components";
 
-.nav-item:hover {
-  box-shadow: 0 2px 2px -2px #000000a6;
-}
+@import "tailwindcss/utilities";
 
-.nav-item a {
-  color: #000000;
-}
-
-.nav-item a:hover {
-  color: #000000a6;
+@variants hover {
+  .animate-grow {
+    transform: translateY(-1px) scale(1.25);
+    transition: transform 0.2s ease;
+  }
 }

@@ -1,14 +1,13 @@
 import React from "react"
-import Container from "../components/container"
+import App from "../components/app"
 import Header from "../components/header"
 import Layout from "../components/layout"
 import Content from "../components/content"
-import Badge from "react-bootstrap/Badge"
 import "../styles/books.css"
 
 const oPageMetadata = {
   title: "Natesan Sivagnanam - Books",
-  headerText: "What I Read",
+  headerText: "Books",
   topics: [
     "Non Fiction",
     "Adventure",
@@ -22,20 +21,23 @@ const oPageMetadata = {
 }
 
 export default () => (
-  <Container>
+  <App>
     <Layout pageTitle={oPageMetadata.title}>
       <Header headerText={oPageMetadata.headerText} />
-      <Content styleClass={oPageMetadata.styleClass}>
-        <div className="d-flex flex-wrap justify-content-center">
-          {oPageMetadata.topics.map(stopic => (
-            <Badge pill variant="light" className="mt-2 mx-2">
-              {stopic}
-            </Badge>
+      <Content
+        styleClass={oPageMetadata.styleClass}
+        className="lg:w-9/12 mx-auto"
+      >
+        <div className="flex flex-wrap justify-center lg:pb-3">
+          {oPageMetadata.topics.map(sTopic => (
+            <span className="bg-blue-100 border-t border-blue-500 text-blue-700 px-4 py-1 mt-3 mx-2 font-bold text-xs">
+              {sTopic}
+            </span>
           ))}
         </div>
 
         <div id="gr_grid_widget_1574420575">
-          <div className="gr_grid_container d-flex flex-row flex-wrap p-2 bd-highlight justify-content-between align-items-stretch align-self-stretch">
+          <div className="gr_grid_container flex flex-row flex-wrap p-2 bd-highlight justify-center lg:justify-between items-stretch self-stretch">
             <div className="gr_grid_book_container">
               <a
                 title="Titanic"
@@ -317,5 +319,5 @@ export default () => (
         ></script>
       </Content>
     </Layout>
-  </Container>
+  </App>
 )

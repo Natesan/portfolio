@@ -1,5 +1,5 @@
 import React from "react"
-import Container from "../components/container"
+import App from "../components/app"
 import Layout from "../components/layout"
 import Content from "../components/content"
 import Header from "../components/header"
@@ -20,25 +20,22 @@ const oPageMetadata = {
 }
 
 export default () => (
-  <Container>
+  <App>
     <Layout pageTitle={oPageMetadata.title}>
-      <Content styleClass={oPageMetadata.styleClass}>
+      <Content styleClass={oPageMetadata.styleClass} className="w-9/12 mx-auto">
         <Header headerText={oPageMetadata.headerText} />
-        <div className="d-flex flex-row flex-wrap justify-content-center">
+        <div className="flex flex-row flex-wrap justify-center">
           {oPageMetadata.aTweet &&
             oPageMetadata.aTweet.map((sTweetID, nTweetIndex) => (
-              <div
-                className="twitterWidget mx-2 align-items-stretch"
-                key={nTweetIndex}
-              >
+              <div className="twitterWidget mx-2" key={nTweetIndex}>
                 <TwitterTweetEmbed tweetId={sTweetID} />
               </div>
             ))}
         </div>
-        <div className="mt-5 text-center">
+        <div className="mt-5 flex justify-center">
           <TwitterFollowButton screenName={oPageMetadata.screenName} />
         </div>
       </Content>
     </Layout>
-  </Container>
+  </App>
 )
