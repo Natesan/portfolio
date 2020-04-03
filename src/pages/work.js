@@ -91,7 +91,7 @@ export default () => (
                 <li
                   key={nSkillIndex}
                   className=""
-                  style={{ padding: ".25rem 1.25rem" }}
+                  style={{ padding: "0.25rem 1.25rem" }}
                 >
                   {sSkill}
                 </li>
