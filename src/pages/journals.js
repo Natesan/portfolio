@@ -22,7 +22,10 @@ const oPageMetadata = {
 export default () => (
   <App>
     <Layout pageTitle={oPageMetadata.title}>
-      <Content styleClass={oPageMetadata.styleClass} className="w-9/12 mx-auto">
+      <Content
+        styleClass={oPageMetadata.styleClass}
+        className="w-9/12 lg:w-10/12 mx-auto"
+      >
         <Header headerText={oPageMetadata.headerText} />
         <div className="flex flex-row flex-wrap justify-center">
           {oPageMetadata.aTweet &&

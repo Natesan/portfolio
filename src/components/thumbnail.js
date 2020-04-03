@@ -17,13 +17,11 @@ export default () => {
   `)
 
   return (
-    <div>
-      <Img
-        fixed={data.file.childImageSharp.fixed}
-        alt="Natesan's Portfolio Image"
-        className="img-fluid img-thumbnail mx-auto rounded px-1"
-        width="75%"
-      ></Img>
-    </div>
+    <Img
+      fixed={data.file.childImageSharp.fixed}
+      alt="Natesan's Portfolio Image"
+      className="rounded-lg shadow-2xl"
+      width="75%"
+    ></Img>
   )
 }

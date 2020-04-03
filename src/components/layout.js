@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import PageTransition from "gatsby-plugin-page-transitions"
 import favicon from "../images/favicon.ico"
 import logo from "../images/logo.svg"
-import useDarkMode from "use-dark-mode"
+// import useDarkMode from "use-dark-mode"
 
 const linkStyle = {
   textDecoration: `none`,
@@ -24,7 +24,7 @@ var oPageMetadata = {
 }
 
 export default ({ pageTitle, children, showCredits }) => {
-  const darkMode = useDarkMode(false)
+  // const darkMode = useDarkMode(false)
 
   return (
     <div className="layout p-3 font-sans">
@@ -59,7 +59,7 @@ export default ({ pageTitle, children, showCredits }) => {
                   className="lg:absolute lg:left-2 lg:top-1.5 absolute left-2 top-1"
                   href="/"
                 >
-                  <img src={logo} className="w-12 h-12"></img>
+                  <img src={logo} alt="Logo" className="w-12 h-12"></img>
                 </a>
               </li>
               <ListLink to="/">Home</ListLink>
