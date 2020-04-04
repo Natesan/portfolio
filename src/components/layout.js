@@ -56,7 +56,7 @@ export default ({ pageTitle, children, showCredits }) => {
             <ul className="flex flex-wrap justify-evenly ">
               <li>
                 <a
-                  className="lg:absolute lg:left-2 lg:top-1.5 absolute left-2 top-1"
+                  className="lg:absolute lg:left-2 lg:top-1.5 absolute left-center md:left-2 lg:left-2 top-1"
                   href="/"
                 >
                   <img src={logo} alt="Logo" className="w-12 h-12"></img>
