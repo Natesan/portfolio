@@ -1,8 +1,8 @@
 <h1 align="center">
-  Gatsby's Portfolio (PWA) for Natesan hosted in Netlify
+  Portfolio Application (PWA) built using Gatsby and hosted on Netlify
 </h1>
 
-Kick off your portfolio with this repository. This ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast portfolio generator for React.
+Simplified portfolio application built as a progressive web application originally using Gatsby (React), Bootstrap and then evolving to use TailwindCSS for utility based styling. 
 
 ## 🚀 Quick start
 
