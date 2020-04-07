@@ -1,15 +1,15 @@
 import React from "react"
 import renderer from "react-test-renderer"
 
-import Container from "../container"
+import App from "../app"
 
-describe("Container", () => {
+describe("App", () => {
   it("renders correctly", () => {
     const tree = renderer
       .create(
-        <Container>
+        <App>
           <div id="test"></div>
-        </Container>
+        </App>
       )
       .toJSON()
     expect(tree).toMatchSnapshot()

@@ -2,7 +2,7 @@
 
 exports[`Header renders correctly 1`] = `
 <h3
-  className="text-center mb-3"
+  className="text-center my-3 text-2xl"
   data-cy="Default Starter"
 >
   Default Starter

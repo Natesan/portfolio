@@ -3,7 +3,6 @@
 exports[`Links render correctly 1`] = `
 Array [
   <svg
-    className="cursor"
     fill="currentColor"
     fontSize="60px"
     height="1em"
@@ -24,7 +23,6 @@ Array [
     />
   </svg>,
   <svg
-    className="cursor"
     fill="currentColor"
     fontSize="60px"
     height="1em"
@@ -45,7 +43,6 @@ Array [
     />
   </svg>,
   <svg
-    className="cursor"
     fill="currentColor"
     fontSize="60px"
     height="1em"
@@ -66,7 +63,6 @@ Array [
     />
   </svg>,
   <svg
-    className="cursor"
     fill="currentColor"
     fontSize="60px"
     height="1em"
@@ -90,7 +86,6 @@ Array [
     />
   </svg>,
   <svg
-    className="cursor"
     fill="currentColor"
     fontSize="60px"
     height="1em"
