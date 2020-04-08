@@ -30,7 +30,7 @@ export default () => (
       >
         <div className="flex flex-wrap justify-center lg:pb-3">
           {oPageMetadata.topics.map(sTopic => (
-            <span className="bg-blue-100 border-t border-blue-500 text-blue-700 px-4 py-1 mt-3 mx-2 font-bold text-xs">
+            <span className="bg-gray-100 border-t border-gray-500 text-gray-700 px-4 py-1 mt-3 mx-2 font-bold text-xs">
               {sTopic}
             </span>
           ))}

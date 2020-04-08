@@ -4,9 +4,22 @@
 
 @import "tailwindcss/utilities";
 
-@variants hover {
-  .animate-grow {
-    transform: translateY(-1px) scale(1.25);
-    transition: transform 0.2s ease;
-  }
+.light-mode {
+  --bg-background-primary: white;
+
+  --text-color-primary: #1e3951;
+  --text-color-secondary: #102c44;
+  --text-color-inversion: #e2e8f0;
+}
+
+.dark-mode {
+  --bg-background-primary: #0d2438;
+
+  --text-color-primary: white;
+  --text-color-secondary: #f7fafc;
+  --text-color-inversion: #1e3951;
+}
+
+.bg-animation {
+  transition: background-color 0.25s;
 }
