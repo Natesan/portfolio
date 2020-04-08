@@ -55,7 +55,7 @@ export default () => (
         <div className="max-w-4xl flex items-center justify-center h-auto flex-wrap mx-auto my-10 md:my-12 lg:py-2">
           <div
             id="profile"
-            className="w-full md:w-3/5 lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-lg shadow-2xl bg-white opacity-75 mx-6 lg:mx-0"
+            className="bg-background-primary text-color-primary bg-animation w-full md:w-3/5 lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-lg shadow-2xl opacity-75 mx-6 lg:mx-0"
           >
             <div className="p-4 md:p-12 text-center lg:text-left">
               <h1 className="text-3xl font-bold pt-6 lg:pt-0">
@@ -72,7 +72,7 @@ export default () => (
                 </svg>
                 Frontend Engineer
               </p>
-              <p className="pt-2 text-gray-600 text-xs lg:text-sm flex items-center justify-center lg:justify-start">
+              <p className="pt-2 text-color-secondary text-xs lg:text-sm flex items-center justify-center lg:justify-start">
                 <svg
                   className="h-4 fill-current text-gray-700 pr-4"
                   xmlns="http://www.w3.org/2000/svg"
@@ -182,7 +182,7 @@ export default () => (
               </div>
             </div>
           </div>
-          <div className="w-full lg:w-2/5 text-center lg:text-left">
+          <div className="w-full my-4 lg:w-2/5 text-center lg:text-left">
             <Thumbnail></Thumbnail>
           </div>
         </div>
