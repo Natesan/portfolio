@@ -59,7 +59,7 @@ export default () => (
         <Header headerText={oPageMetadata.experienceHeaderText} />
         {oPageMetadata.aExperience.map((oExperience, nExperienceIndex) => (
           <div className="mt-3 mb-5" key={nExperienceIndex}>
-            <h5 className="text-center text-gray-800 font-semibold border-black-700 border-b">
+            <h5 className="text-center text-gray-800 font-semibold border-black-700 border-b pb-2">
               {oExperience.title}
             </h5>
             <ul className="mt-2">
