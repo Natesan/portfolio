@@ -19,6 +19,12 @@ Simplified portfolio application built as a progressive web application original
 
     Navigate into your new site’s directory and start it up.
 
+    If you do not have gatsby-cli installed then please install it 
+
+    ```shell
+    npm install -g gatsby-cli
+    ```
+
     ```shell
     cd portfolio/
     npm install
