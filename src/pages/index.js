@@ -53,6 +53,16 @@ const oPageMetadata = {
   styleClass: "index",
 }
 
+const copyPortfolioLinkToClipboard = () => {
+  var dummy = document.createElement("input"),
+    text = window.location.href
+
+  document.body.appendChild(dummy)
+  dummy.value = text
+  dummy.select()
+  document.execCommand("copy")
+  document.body.removeChild(dummy)
+}
 export default () => (
   <App>
     <Layout pageTitle={oPageMetadata.title}>
@@ -105,12 +115,24 @@ export default () => (
               <p className="pt-8 text-sm">
                 Builds user interfaces for large scale enterprise applications.
               </p>
-              <div className="py-4 md:pt-12 md:pb-8 lg:pt-12 lg:pb-8">
-                <button className="bg-gray-700 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded-full">
-                  <Link style={linkStyle} to="/contact">
+              <div className="py-4 flex flex-wrap justify-evenly justify-items-center content-around h-40 md:h-16 lg:h-16 md:pt-12 md:pb-8 lg:pt-12 lg:pb-8">
+                <Link style={linkStyle} to="/contact">
+                  <button
+                    tabIndex="-1"
+                    className="bg-gray-700 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded-full"
+                  >
                     Get In Touch
-                  </Link>
-                </button>
+                  </button>
+                </Link>
+                <div className="flex flex-no-wrap">
+                  <button
+                    id="shareButton"
+                    className="bg-gray-700 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded-full"
+                    onClick={copyPortfolioLinkToClipboard}
+                  >
+                    Share Portfolio
+                  </button>
+                </div>
               </div>
               <div className="mt-6 pb-8 md:pb-12 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between">
                 <a
@@ -130,9 +152,9 @@ export default () => (
                   >
                     <title>LinkedIn</title>
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                     />
                   </svg>
@@ -154,9 +176,9 @@ export default () => (
                   >
                     <title>Patent</title>
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       d="M16 4v12l-4-2-4 2V4M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
                     />
                   </svg>
