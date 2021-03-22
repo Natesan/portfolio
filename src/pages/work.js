@@ -33,8 +33,7 @@ const oPageMetadata = {
   ],
   skillHeaderText: "Skills",
   aSkill: [
-    "HTML | CSS",
-    "Object Oriented Javascript | jQuery",
+    "HTML | CSS | JS",
     "SAPUI5 | React",
     "Single Page Applications | Progressive Web Applications",
     "Node.js",
@@ -91,7 +90,7 @@ export default () => (
                 <li
                   key={nSkillIndex}
                   className=""
-                  style={{ padding: "0.25rem 1.25rem" }}
+                  style={{ padding: "0 1.25rem" }}
                 >
                   {sSkill}
                 </li>
