@@ -25,7 +25,7 @@ export default () => (
     <Layout pageTitle={oPageMetadata.title}>
       <Header headerText={oPageMetadata.headerText} />
       <Content
-        styleclassName={oPageMetadata.styleClass}
+        styleClass={oPageMetadata.styleClass}
         className="lg:w-9/12 mx-auto"
       >
         <div className="flex flex-wrap justify-center lg:pb-3">
