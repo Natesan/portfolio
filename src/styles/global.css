@@ -23,3 +23,49 @@
 .bg-animation {
   transition: background-color 0.25s;
 }
+
+.shareButton {
+  overflow: hidden;
+  position: relative;
+}
+
+.shareButton:hover span {
+  transform: translateX(-15px);
+}
+
+.shareButton span {
+  display: inline-block;
+  transition: transform .3s cubic-bezier(.455,.03,.515,.955);
+}
+
+.shareButton:hover svg {
+  opacity: 1;
+  transform: translate(-30px) rotate(360deg);
+}
+
+.shareButton svg {
+  position: absolute;
+  top: 22%; 
+  right: -20px;
+  opacity: 0;
+  transition: opacity .3s .05s cubic-bezier(.455,.03,.515,.955), transform .3s .05s cubic-bezier(.455,.03,.515,.955);
+}
+
+.contactButton {
+  padding: 12px 24px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+}
+
+.contactButton:hover {
+  transform: translate3d(0px,-2px,0px);
+  box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+}
+
+.social-links .link svg {
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-links .link:hover svg {
+  transform: scale(1.3);
+}

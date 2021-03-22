@@ -30,14 +30,43 @@ export default () => (
       >
         <div className="flex flex-wrap justify-center lg:pb-3">
           {oPageMetadata.topics.map(sTopic => (
-            <span className="bg-gray-100 border-t border-gray-500 text-gray-700 px-4 py-1 mt-3 mx-2 font-bold text-xs">
+            <span
+              key={sTopic}
+              className="bg-gray-100 border-t border-gray-500 text-gray-700 px-4 py-1 mt-3 mx-2 font-bold text-xs"
+            >
               {sTopic}
             </span>
           ))}
         </div>
 
-        <div id="gr_grid_widget_1574420575">
-          <div className="gr_grid_container flex flex-row flex-wrap p-2 bd-highlight justify-center lg:justify-between items-stretch self-stretch">
+        <div id="gr_grid_widget_1616422216">
+          <div className="gr_grid_container flex flex-row flex-wrap p-2 bd-highlight justify-center lg:justify-evenly items-stretch self-stretch">
+            <div className="gr_grid_book_container">
+              <a
+                title="Eleven Rings: The Soul of Success"
+                rel="nofollow"
+                href="https://www.goodreads.com/book/show/16158522-eleven-rings"
+              >
+                <img
+                  alt="Eleven Rings: The Soul of Success"
+                  border="0"
+                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1366559771l/16158522._SX98_.jpg"
+                />
+              </a>
+            </div>
+            <div className="gr_grid_book_container">
+              <a
+                title="The Ride of a Lifetime: Lessons Learned from 15 Years as CEO of the Walt Disney Company"
+                rel="nofollow"
+                href="https://www.goodreads.com/book/show/44525305-the-ride-of-a-lifetime"
+              >
+                <img
+                  alt="The Ride of a Lifetime: Lessons Learned from 15 Years as CEO of the Walt Disney Company"
+                  border="0"
+                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1556036622l/44525305._SX98_.jpg"
+                />
+              </a>
+            </div>
             <div className="gr_grid_book_container">
               <a
                 title="Titanic"
@@ -73,46 +102,7 @@ export default () => (
                 <img
                   alt="Fluid: The Approach Applied by Geniuses Over Centuries"
                   border="0"
-                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1537004518l/41815475._SX98_.jpg"
-                />
-              </a>
-            </div>
-            <div className="gr_grid_book_container">
-              <a
-                title="The Art of Racing in the Rain"
-                rel="nofollow"
-                href="https://www.goodreads.com/book/show/3153910-the-art-of-racing-in-the-rain"
-              >
-                <img
-                  alt="The Art of Racing in the Rain"
-                  border="0"
-                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1377206302l/3153910._SX98_.jpg"
-                />
-              </a>
-            </div>
-            <div className="gr_grid_book_container">
-              <a
-                title="Midnight in Chernobyl: The Untold Story of the World's Greatest Nuclear Disaster"
-                rel="nofollow"
-                href="https://www.goodreads.com/book/show/40538681-midnight-in-chernobyl"
-              >
-                <img
-                  alt="Midnight in Chernobyl: The Untold Story of the World's Greatest Nuclear Disaster"
-                  border="0"
-                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1545577007l/40538681._SX98_.jpg"
-                />
-              </a>
-            </div>
-            <div className="gr_grid_book_container">
-              <a
-                title="When Breath Becomes Air"
-                rel="nofollow"
-                href="https://www.goodreads.com/book/show/25899336-when-breath-becomes-air"
-              >
-                <img
-                  alt="When Breath Becomes Air"
-                  border="0"
-                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1492677644l/25899336._SX98_.jpg"
+                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1578755150l/41815475._SX98_.jpg"
                 />
               </a>
             </div>
@@ -126,6 +116,19 @@ export default () => (
                   alt="IC 814 Hijacked"
                   border="0"
                   src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1420371105l/24288631._SX98_.jpg"
+                />
+              </a>
+            </div>
+            <div className="gr_grid_book_container">
+              <a
+                title="Midnight in Chernobyl: The Untold Story of the World's Greatest Nuclear Disaster"
+                rel="nofollow"
+                href="https://www.goodreads.com/book/show/40538681-midnight-in-chernobyl"
+              >
+                <img
+                  alt="Midnight in Chernobyl: The Untold Story of the World's Greatest Nuclear Disaster"
+                  border="0"
+                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1545577007l/40538681._SX98_.jpg"
                 />
               </a>
             </div>
@@ -157,45 +160,6 @@ export default () => (
             </div>
             <div className="gr_grid_book_container">
               <a
-                title="The Tattooist of Auschwitz"
-                rel="nofollow"
-                href="https://www.goodreads.com/book/show/36582334-the-tattooist-of-auschwitz"
-              >
-                <img
-                  alt="The Tattooist of Auschwitz"
-                  border="0"
-                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1510503308l/36582334._SX98_.jpg"
-                />
-              </a>
-            </div>
-            <div className="gr_grid_book_container">
-              <a
-                title="Grit"
-                rel="nofollow"
-                href="https://www.goodreads.com/book/show/27213329-grit"
-              >
-                <img
-                  alt="Grit"
-                  border="0"
-                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1457889762l/27213329._SX98_.jpg"
-                />
-              </a>
-            </div>
-            <div className="gr_grid_book_container">
-              <a
-                title="Compulsory (The Murderbot Diaries, #0.5)"
-                rel="nofollow"
-                href="https://www.goodreads.com/book/show/43255164-compulsory"
-              >
-                <img
-                  alt="Compulsory"
-                  border="0"
-                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1545154326l/43255164._SX98_.jpg"
-                />
-              </a>
-            </div>
-            <div className="gr_grid_book_container">
-              <a
                 title="Total Competition: Lessons in Strategy from Formula One"
                 rel="nofollow"
                 href="https://www.goodreads.com/book/show/31125170-total-competition"
@@ -204,6 +168,19 @@ export default () => (
                   alt="Total Competition: Lessons in Strategy from Formula One"
                   border="0"
                   src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1468558842l/31125170._SX98_.jpg"
+                />
+              </a>
+            </div>
+            <div className="gr_grid_book_container">
+              <a
+                title="Rocket Men: The Daring Odyssey of Apollo 8 and the Astronauts Who Made Man's First Journey to the Moon"
+                rel="nofollow"
+                href="https://www.goodreads.com/book/show/35414997-rocket-men"
+              >
+                <img
+                  alt="Rocket Men: The Daring Odyssey of Apollo 8 and the Astronauts Who Made Man's First Journey to the Moon"
+                  border="0"
+                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1502143372l/35414997._SX98_.jpg"
                 />
               </a>
             </div>
@@ -222,19 +199,6 @@ export default () => (
             </div>
             <div className="gr_grid_book_container">
               <a
-                title="Factfulness: Ten Reasons We're Wrong About the World – and Why Things Are Better Than You Think"
-                rel="nofollow"
-                href="https://www.goodreads.com/book/show/34890015-factfulness"
-              >
-                <img
-                  alt="Factfulness: Ten Reasons We're Wrong About the World – and Why Things Are Better Than You Think"
-                  border="0"
-                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1544963815l/34890015._SX98_.jpg"
-                />
-              </a>
-            </div>
-            <div className="gr_grid_book_container">
-              <a
                 title="City of Thieves"
                 rel="nofollow"
                 href="https://www.goodreads.com/book/show/1971304.City_of_Thieves"
@@ -248,14 +212,14 @@ export default () => (
             </div>
             <div className="gr_grid_book_container">
               <a
-                title="Man's Search for Meaning"
+                title="Grit: The Power of Passion and Perseverance"
                 rel="nofollow"
-                href="https://www.goodreads.com/book/show/4069.Man_s_Search_for_Meaning"
+                href="https://www.goodreads.com/book/show/27213329-grit"
               >
                 <img
-                  alt="Man's Search for Meaning"
+                  alt="Grit: The Power of Passion and Perseverance"
                   border="0"
-                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1535419394l/4069._SX98_.jpg"
+                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1457889762l/27213329._SX98_.jpg"
                 />
               </a>
             </div>
@@ -274,27 +238,53 @@ export default () => (
             </div>
             <div className="gr_grid_book_container">
               <a
-                title="Where Good Ideas Come from: The Natural History of Innovation"
+                title="Man's Search for Meaning"
                 rel="nofollow"
-                href="https://www.goodreads.com/book/show/8034188-where-good-ideas-come-from"
+                href="https://www.goodreads.com/book/show/4069.Man_s_Search_for_Meaning"
               >
                 <img
-                  alt="Where Good Ideas Come from: The Natural History of Innovation"
+                  alt="Man's Search for Meaning"
                   border="0"
-                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1311705993l/8034188._SX98_.jpg"
+                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1535419394l/4069._SX98_.jpg"
                 />
               </a>
             </div>
             <div className="gr_grid_book_container">
               <a
-                title="The Everything Store: Jeff Bezos and the Age of Amazon"
+                title="The Tattooist of Auschwitz"
                 rel="nofollow"
-                href="https://www.goodreads.com/book/show/17660462-the-everything-store"
+                href="https://www.goodreads.com/book/show/36582334-the-tattooist-of-auschwitz"
               >
                 <img
-                  alt="The Everything Store: Jeff Bezos and the Age of Amazon"
+                  alt="The Tattooist of Auschwitz"
                   border="0"
-                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1365394361l/17660462._SX98_.jpg"
+                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1510503308l/36582334._SX98_.jpg"
+                />
+              </a>
+            </div>
+            <div className="gr_grid_book_container">
+              <a
+                title="Factfulness: Ten Reasons We're Wrong About the World – and Why Things Are Better Than You Think"
+                rel="nofollow"
+                href="https://www.goodreads.com/book/show/34890015-factfulness"
+              >
+                <img
+                  alt="Factfulness: Ten Reasons We're Wrong About the World – and Why Things Are Better Than You Think"
+                  border="0"
+                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1544963815l/34890015._SX98_.jpg"
+                />
+              </a>
+            </div>
+            <div className="gr_grid_book_container">
+              <a
+                title="The Boy in the Striped Pajamas"
+                rel="nofollow"
+                href="https://www.goodreads.com/book/show/39999.The_Boy_in_the_Striped_Pajamas"
+              >
+                <img
+                  alt="The Boy in the Striped Pajamas"
+                  border="0"
+                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1366228171l/39999._SX98_.jpg"
                 />
               </a>
             </div>
@@ -313,9 +303,9 @@ export default () => (
           </div>
         </div>
         <script
-          src="https://www.goodreads.com/review/grid_widget/17359687.Natesan's%20bookshelf:%20read?cover_size=medium&hide_link=true&hide_title=true&num_books=100&order=d&shelf=read&sort=date_updated&widget_id=1574420575"
+          src="https://www.goodreads.com/review/grid_widget/17359687.Natesan's%20bookshelf:%20read?cover_size=medium&hide_link=true&hide_title=true&num_books=20&order=d&shelf=read&sort=date_added&widget_id=1616422216"
           type="text/javascript"
-          charset="utf-8"
+          charSet="utf-8"
         ></script>
       </Content>
     </Layout>
