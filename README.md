@@ -85,7 +85,7 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 <p align="center">
   <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
+    Gatsby
   </a>
 </p>
 
