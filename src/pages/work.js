@@ -3,6 +3,7 @@ import App from "../components/app"
 import Header from "../components/header"
 import Layout from "../components/layout"
 import Content from "../components/content"
+import "../styles/work.css"
 
 const oPageMetadata = {
   title: "Natesan Sivagnanam - Work",
@@ -15,8 +16,8 @@ const oPageMetadata = {
         "Hands on working experience with frameworks designed to build cross-platform, responsive, enterprise-ready, testable applications",
         "Worked on core product areas leading a team and contributing to the UI platform thereby gaining experience in making important architectural design decisions",
         "Contributed to a core metadata driven framework adopting Behaviour Driven Development focusing on both Test Driven Development and Unit Testing",
+        "Granted a patent on an Enterprise Bot Framework",
         "Open to work with distributed cross-functional teams following agile processes or otherwise",
-        "Contributed to patent filing on various bot based implementations",
         "Go to person for accessibility, experience in working with web page performance",
         "Building interactive prototypes using Javascript with supporting UI libraries/framework is something I do outside of work",
       ],
@@ -46,6 +47,14 @@ const oPageMetadata = {
     "Web Page Performance",
   ],
   styleClass: "work",
+  projectHeaderText: "Projects",
+  aProjects: [
+    { name: "Portfolio", url: "https://natesan.netlify.app/" },
+    { name: "Metadata Driven Portfolio", url: "https://metadata-portfolio.netlify.app/" },
+    { name: "React Weather App", url: "https://react-weather-now-app.netlify.app/" },
+    { name: "Timer Utility", url: "https://natlab.netlify.app/" },
+    { name: "Accessibility-101", url: "https://accessibility-101.netlify.app/" },
+  ],
 }
 
 export default () => (
@@ -93,6 +102,22 @@ export default () => (
                   style={{ padding: "0 1.25rem" }}
                 >
                   {sSkill}
+                </li>
+              ))}
+          </ul>
+        </div>
+      </Content>
+      <Content
+        styleClass={oPageMetadata.styleClass}
+        className="lg:w-5/12 lg:mx-auto"
+      >
+        <Header headerText={oPageMetadata.projectHeaderText}></Header>
+        <div className="my-3">
+          <ul className="mt-4 text-center project-list">
+            {oPageMetadata.aProjects &&
+              oPageMetadata.aProjects.map((oProject, nProjectIndex) => (
+                <li key={nProjectIndex} style={{ padding: "0 1.25rem" }}>
+                  <a href={oProject.url} target="_blank">{oProject.name}</a>
                 </li>
               ))}
           </ul>
