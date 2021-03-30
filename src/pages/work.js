@@ -117,7 +117,7 @@ export default () => (
             {oPageMetadata.aProjects &&
               oPageMetadata.aProjects.map((oProject, nProjectIndex) => (
                 <li key={nProjectIndex} style={{ padding: "0 1.25rem" }}>
-                  <a href={oProject.url} target="_blank">{oProject.name}</a>
+                  <a href={oProject.url} target="_blank" rel="noopener noreferrer">{oProject.name}</a>
                 </li>
               ))}
           </ul>
