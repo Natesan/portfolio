@@ -179,7 +179,7 @@ export default () => (
                   target="_blank"
                   rel="noopener noreferrer"
                   className="link"
-                  href="https://patents.google.com/patent/US10902323B2"
+                  href="https://patents.google.com/?inventor=Natesan+Sivagnanam"
                   data-tippy-content="@patent_handle"
                 >
                   <svg
@@ -190,7 +190,7 @@ export default () => (
                     stroke="currentColor"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <title>Patent</title>
+                    <title>Patents</title>
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
