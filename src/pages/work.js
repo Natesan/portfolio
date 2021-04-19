@@ -16,7 +16,7 @@ const oPageMetadata = {
         "Hands on working experience with frameworks designed to build cross-platform, responsive, enterprise-ready, testable applications",
         "Worked on core product areas leading a team and contributing to the UI platform thereby gaining experience in making important architectural design decisions",
         "Contributed to a core metadata driven framework adopting Behaviour Driven Development focusing on both Test Driven Development and Unit Testing",
-        "Granted a patent on an Enterprise Bot Framework",
+        "Granted multiple patents on the design of Enterprise Bot Framework",
         "Open to work with distributed cross-functional teams following agile processes or otherwise",
         "Go to person for accessibility, experience in working with web page performance",
         "Building interactive prototypes using Javascript with supporting UI libraries/framework is something I do outside of work",
