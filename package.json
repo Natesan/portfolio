@@ -15,7 +15,7 @@
     "test:e2e": "start-server-and-test develop http://localhost:8000 cy:open"
   },
   "dependencies": {
-    "gatsby": "^2.32.11",
+    "gatsby": "^4.25.7",
     "gatsby-image": "^2.11.0",
     "gatsby-plugin-google-analytics": "^2.11.0",
     "gatsby-plugin-html-attributes": "^1.0.5",
